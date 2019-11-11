@@ -17,3 +17,9 @@ exports.createTeacher = async (req, res) => {
     })
   }
 }
+
+// List all teachers.
+exports.getTeachers = async (req, res) => {
+  const teachers = await Teacher.find()
+  res.send({ teachers })
+}
