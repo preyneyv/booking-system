@@ -5,7 +5,7 @@ const router = express.Router()
 
 // -- DEBUG ROUTES --
 router.post('/', controller.createTeacher)
-router.get('/', contorller.getTeachers)
+router.get('/', controller.getTeachers)
 // -- END OF DEBUG ROUTES --
 
 module.exports = router
