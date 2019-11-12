@@ -6,9 +6,6 @@ const app = express()
 const config = require('./config')
 const teacherInfoMiddleware = require('./middleware/teacherInfo')
 
-console.log(config.port)
-
-
 // Add the body parsers.
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
