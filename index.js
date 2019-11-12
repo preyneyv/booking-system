@@ -18,4 +18,4 @@ app.use('/api/bookings/', require('./routes/bookings'))
 app.use('/api/teachers/', require('./routes/teachers'))
 
 // Set the app to listen on the port.
-app.listen(config.port, () => console.log(`Listening on port ${config.port}`))
+app.listen(config.PORT, () => console.log(`Listening on port ${config.PORT}`))

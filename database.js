@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const config = require('./config')
 
 const { Schema } = mongoose
-mongoose.connect(config.dbUri)
+mongoose.connect(config.DBURI)
 
 const roomSchema = new Schema({
   name: String
